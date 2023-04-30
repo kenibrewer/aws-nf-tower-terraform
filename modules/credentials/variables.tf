@@ -1,10 +1,16 @@
-variable "nftower_user_name" {
+variable "aws_user_name" {
   type = string
   description = "The name of the IAM user to create"
   default = "nftower_access"
 }
 
-variable "nftower_user_path" {
+variable "nftower_credential_name" {
+  type = string
+  description = "The name of the Nextflow Tower credential"
+  default = "aws-towerforge"
+}
+
+variable "aws_user_path" {
   type = string
   description = "The path in which to create the IAM user"
   default = "/terraform/nftower/"
@@ -22,10 +28,15 @@ variable "NFTOWER_ORGANIZATION" {
   default = "nftower"
 }
 
+variable "nftower_workspace_id" {
+  type = string
+  description = "The ID of the Nextflow Tower workspace"
+}
+
 variable "nftower_api_url" {
   type = string
   description = "The URL of the Nextflow Tower API"
-  default = "https://tower.nf/api/v1"
+  default = "https://api.tower.nf"
 }
 
 variable "aws_region" {
