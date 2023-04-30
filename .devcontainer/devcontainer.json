@@ -1,9 +1,28 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
-    "ghcr.io/devcontainers/features/aws-cli:1": {},
-    "ghcr.io/devcontainers/features/terraform:1": {},
-    "ghcr.io/devcontainers-contrib/features/terragrunt:1": {},
-    "ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
+    "ghcr.io/devcontainers/features/aws-cli:1": {
+		"version": "latest"
+	},
+    "ghcr.io/devcontainers-contrib/features/pre-commit:2": {
+		"version": "latest"
+	},
+	"ghcr.io/devcontainers/features/terraform:1": {
+		"version": "latest",
+		"tflint": "latest",
+		"terragrunt": "latest"
+	}
+  },
+  "customizations":{
+    "commands": [
+      "precommit install --install-hooks"
+    ],
+    "vscode": {
+      "extensions": [
+        "hashicorp.terraform",
+        "AmazonWebServices.aws-toolkit-vscode",
+        "github.copilot"
+      ]
+    }
   }
 }
