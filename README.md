@@ -23,13 +23,12 @@ https://github.com/thoughtbot/cloudformation-terraform-state-backend
 
 2. Set the following environment variables:
 ```
-export TF_VAR_aws_region=<your region>
-export TF_VAR_aws_profile=<your profile>
-export TF_VAR_aws_account_id=<your account id>
+export TF_VAR_nftower_api_key=<Insert-API-Key-Here>
 ```
 
-3. Deploy the Terraform code:
+3. Deploy the Terraform code for each environment:
 ```
+cd live/dev
 terragrunt run-all init
 terragrunt run-all apply
 ```
