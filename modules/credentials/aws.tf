@@ -3,7 +3,7 @@
 
 # Create an IAM user for Nextflow Tower
 resource "aws_iam_user" "nftower_user" {
-  name = local.aws_user_name
+  name = local.generated_aws_user_name
   path = var.aws_user_path
   tags = local.common_tags
 }
@@ -20,10 +20,10 @@ resource "aws_iam_user_policy_attachment" "nftower_user" {
 
 # Create an IAM policy for Nextflow Tower using HEREDOC syntax
 resource "aws_iam_policy" "nftower_policy" {
-  name        = local.aws_user_policy_name
+  name        = local.generated_aws_user_policy_name
   description = "Policy for Nextflow Tower"
   path        = var.aws_user_path
-  tags = local.common_tags
+  tags        = local.common_tags
   policy      = <<POLICYEOF
 {
   "Version": "2012-10-17",

@@ -2,12 +2,10 @@ repos:
   - repo: https://github.com/antonbabenko/pre-commit-terraform
     rev: v1.78.0
     hooks:
-      - id: terraform_docs
       - id: terraform_fmt
       - id: terraform_tflint
       - id: terraform_validate
       - id: terragrunt_fmt
-      - id: terragrunt_validate
   - repo: https://github.com/Yelp/detect-secrets
     rev: v1.4.0
     hooks:

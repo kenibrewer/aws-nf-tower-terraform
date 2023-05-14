@@ -16,13 +16,13 @@ terraform {
   }
 }
 provider "aws" {
-  region = var.aws_region
+  region  = var.aws_region
   profile = var.aws_profile
 }
 provider "nftower" {
-  api_key = var.NFTOWER_API_KEY
-  api_url = var.nftower_api_url
-  organization = var.NFTOWER_ORGANIZATION
+  api_key      = var.nftower_api_key
+  api_url      = var.nftower_api_url
+  organization = var.nftower_organization
 }
 provider "random" {
 }

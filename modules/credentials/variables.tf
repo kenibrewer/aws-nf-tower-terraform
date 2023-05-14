@@ -1,57 +1,57 @@
 variable "aws_user_name" {
-  type = string
+  type        = string
   description = "The name of the IAM user to create"
-  default = "nftower_access"
+  default     = "nftower_access"
 }
 
 variable "nftower_credential_name" {
-  type = string
+  type        = string
   description = "The name of the Nextflow Tower credential"
-  default = "aws-towerforge"
+  default     = "aws-towerforge"
 }
 
 variable "aws_user_path" {
-  type = string
+  type        = string
   description = "The path in which to create the IAM user"
-  default = "/terraform/nftower/"
+  default     = "/terraform/nftower/"
 }
 
-variable "NFTOWER_API_KEY" {
-  type = string
+variable "nftower_api_key" {
+  type        = string
   description = "The API key for Nextflow Tower"
-  sensitive = true
+  sensitive   = true
 }
 
-variable "NFTOWER_ORGANIZATION" {
-  type = string
+variable "nftower_organization" {
+  type        = string
   description = "The name of the Nextflow Tower organization"
-  default = "nftower"
+  default     = "nftower"
 }
 
 variable "nftower_workspace_id" {
-  type = string
+  type        = string
   description = "The ID of the Nextflow Tower workspace"
 }
 
 variable "nftower_api_url" {
-  type = string
+  type        = string
   description = "The URL of the Nextflow Tower API"
-  default = "https://api.tower.nf"
+  default     = "https://api.tower.nf"
 }
 
 variable "aws_region" {
-  type = string
+  type        = string
   description = "The AWS region in which to create resources"
-  default = "us-east-1"
+  default     = "us-east-1"
 }
 
 variable "aws_profile" {
-  type = string
+  type        = string
   description = "The AWS profile to use for creating resources"
 }
 
 variable "environment_name" {
-  type = string
+  type        = string
   description = "The name of the environment in which to create resources"
-  default = "dev"
+  default     = "dev"
 }

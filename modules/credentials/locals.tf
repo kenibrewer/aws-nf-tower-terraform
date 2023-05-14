@@ -6,14 +6,14 @@ resource "random_integer" "random_suffix" {
 
 locals {
   common_tags = {
-    Name = "nftower-modules/credentials"
+    Name        = "nftower-modules/credentials"
     Environment = var.environment_name
-    Owner = "nftower"
-    Terraform = "true"
+    Owner       = "nftower"
+    Terraform   = "true"
   }
 
   # Create an IAM user for Nextflow Tower
-  aws_user_name = "${var.aws_user_name}-${random_integer.random_suffix.result}"
-  aws_user_policy_name = "nftower_policy-${random_integer.random_suffix.result}"
-  nftower_credential_name = "${var.nftower_credential_name}-${random_integer.random_suffix.result}"
+  generated_aws_user_name           = "${var.aws_user_name}-${random_integer.random_suffix.result}"
+  generated_aws_user_policy_name    = "nftower_policy-${random_integer.random_suffix.result}"
+  generated_nftower_credential_name = "${var.nftower_credential_name}-${random_integer.random_suffix.result}"
 }
