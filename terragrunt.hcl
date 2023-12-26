@@ -13,12 +13,17 @@ locals {
 
   # Set the AWS Account ID for the management account
   management_account_id = 934492087370
-  aws_account_id        = local.aws_account_vars.locals.aws_account_id
-  aws_profile           = local.aws_account_vars.locals.aws_profile
-  aws_region            = local.aws_region_vars.locals.aws_region
-  environment           = local.environment_vars.locals.environment
-  nftower_api_url       = local.nftower_vars.locals.nftower_api_url
-  nftower_organization  = local.nftower_vars.locals.nftower_organization
+  # Set variables for the VPC
+  cidr                 = "10.106.0.0/16"
+  azs                  = ["us-east-1a", "us-east-1b", "us-east-1c"]
+  private_subnets      = ["10.106.1.0/24", "10.106.2.0/24", "10.106.3.0/24"]
+  public_subnets       = ["10.106.101.0/24", "10.106.102.0/24", "10.106.103.0/24"]
+  aws_account_id       = local.aws_account_vars.locals.aws_account_id
+  aws_profile          = local.aws_account_vars.locals.aws_profile
+  aws_region           = local.aws_region_vars.locals.aws_region
+  environment          = local.environment_vars.locals.environment
+  nftower_api_url      = local.nftower_vars.locals.nftower_api_url
+  nftower_organization = local.nftower_vars.locals.nftower_organization
 
 }
 
