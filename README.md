@@ -6,7 +6,7 @@ This is a work in progress and is not yet ready for production use.
 ## Features
 
 * Stores Terraform state securely in a KMS encrypted S3 bucket in a terraform management account.
-* Creates AWS user, credentials, and access keys for the Nextflow Tower application to use.
+* Creates AWS user, credentials, and access keys work buckets for the Nextflow Tower application to use.
 * Creates one or more Tower workspaces within a Tower organization.
 * Directly passes the AWS credentials to a Nextflow Tower workspaces without manual copying and pasting.
 

@@ -55,3 +55,9 @@ variable "environment_name" {
   description = "The name of the environment in which to create resources"
   default     = "dev"
 }
+
+variable "aws_bucket_name" {
+  type        = string
+  description = "The name of the S3 bucket to create"
+  default     = "nftower-work"
+}
