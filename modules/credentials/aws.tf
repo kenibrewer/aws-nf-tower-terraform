@@ -112,7 +112,7 @@ resource "aws_iam_policy" "nftower_policy" {
               "ec2:DescribeAccountAttributes",
               "ec2:DescribeSubnets",
               "ec2:DescribeLaunchTemplates",
-              "ec2:DescribeLaunchTemplateVersions", 
+              "ec2:DescribeLaunchTemplateVersions",
               "ec2:CreateLaunchTemplate",
               "ec2:DeleteLaunchTemplate",
               "ec2:DescribeKeyPairs",

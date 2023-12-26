@@ -1,4 +1,4 @@
-# Include the root `terragrunt.hcl` configuration. 
+# Include the root `terragrunt.hcl` configuration.
 include "root" {
   path = find_in_parent_folders()
 }

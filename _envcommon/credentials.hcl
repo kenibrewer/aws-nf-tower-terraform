@@ -1,6 +1,6 @@
 # ---------------------------------------------------------------------------------------------------------------------
 # COMMON TERRAGRUNT CONFIGURATION
-# This is the common component configuration for workspace. 
+# This is the common component configuration for workspace.
 # ---------------------------------------------------------------------------------------------------------------------
 
 terraform {
