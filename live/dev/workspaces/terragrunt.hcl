@@ -11,5 +11,5 @@ include "envcommon" {
 # Overrides for the common configuration.
 
 inputs = {
-  nftower_api_key = get_env("TF_VARS_nftower_api_key")
+  nftower_api_key = get_env("TF_VARS_NFTOWER_API_KEY")
 }

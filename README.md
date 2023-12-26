@@ -23,7 +23,7 @@ https://github.com/thoughtbot/cloudformation-terraform-state-backend
 
 2. Set the following environment variables:
 ```
-export TF_VAR_nftower_api_key=<Insert-API-Key-Here>
+export TF_VARS_NFTOWER_API_KEY=<Insert-API-Key-Here>
 ```
 
 3. Deploy the Terraform code for each environment:
