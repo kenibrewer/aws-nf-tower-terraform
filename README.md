@@ -10,13 +10,6 @@ This is a work in progress and is not yet ready for production use.
 - Creates one or more Tower workspaces within a Tower organization.
 - Directly passes the AWS credentials to a Nextflow Tower workspaces without manual copying and pasting.
 
-## Planned Features
-
-- Create a list of AWS Batch compute environments from a json-formatted file for each Tower workspace.
-- Add a list of Nextflow pipelines to each Tower workspace from a json-formatted file.
-- Add a list of Nextflow Tower users to each Tower workspace from a json-formatted file.
-- Adopt gitops terraform worklfow instead of CLI-driven workflow.
-
 # Setup Instructions
 
 ## AWS Account Setup
